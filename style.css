@@ -1,0 +1,53 @@
+body {
+    font-family: monserrat, sans-serif;  
+    color:#515076;
+    font-size: 13px;  
+    width: 1280px;
+    height: 1715px;
+    margin: 0 auto;
+}
+
+.header {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    margin-top: 200px;
+    font-size: 35px;
+}
+
+.container {
+    display: flex;
+    flex: 0 0 80%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 45px;
+
+    margin-left: 85px;
+    margin-right: 85px;
+}
+
+.container img {
+    display: block;
+    width: 290px;
+    height: 245px;
+    margin: 0 auto;  ;
+    justify-content: center;
+    padding: 25px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cards {
+  
+    box-sizing: border-box;
+    padding: 0 0 0 0;  
+    margin: 0;
+    background-color: #F7F7FA; ;
+    height: 650px;
+    width: 340px;
+}
+
