@@ -18,20 +18,28 @@ body {
 
 .container {
     display: flex;
-    flex: 0 0 80%;
-    justify-content: center;
     flex-wrap: wrap;
+    flex: 0 0 30%;
+    justify-content: center;
     gap: 45px;
-
     margin-left: 85px;
     margin-right: 85px;
+}
+
+.cards {
+    box-sizing: border-box;
+    padding: 0 0 0 0;  
+    margin: 0;
+    background-color: #F7F7FA; ;
+    height: 650px;
+    width: 340px;
 }
 
 .container img {
     display: block;
     width: 290px;
     height: 245px;
-    margin: 0 auto;  ;
+    margin: 0 auto; 
     justify-content: center;
     padding: 25px;
 }
@@ -41,13 +49,4 @@ body {
     font-weight: 700;
 }
 
-.cards {
-  
-    box-sizing: border-box;
-    padding: 0 0 0 0;  
-    margin: 0;
-    background-color: #F7F7FA; ;
-    height: 650px;
-    width: 340px;
-}
 
