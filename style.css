@@ -26,12 +26,26 @@ body {
     margin-right: 85px;
 }
 
+
+.container .price {
+    display: inline-block;
+    margin-left: 175px;
+
+}
+
+.text-product .price-container {
+    display: flex;
+    justify-content: end; 
+    margin-top: 0px;
+  
+  
+}
 .cards {
     box-sizing: border-box;
     padding: 0 0 0 0;  
     margin: 0;
-    background-color: #F7F7FA; ;
-    height: 650px;
+    background-color: #F7F7FA;
+    height: 670px;
     width: 340px;
 }
 
@@ -39,12 +53,19 @@ body {
     display: block;
     width: 290px;
     height: 245px;
-    margin: 0 auto; 
+    margin: 0 auto;
     justify-content: center;
     padding: 25px;
 }
 
-.price {
+.text-product {
+    display: block;
+    padding: 25px 25px 25px 25px;
+    height: 336px;
+    width: 290px;
+}
+
+.text-price {
     font-size: 20px;
     font-weight: 700;
 }
