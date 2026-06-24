@@ -18,12 +18,17 @@ body {
     z-index: 1;
 }
 
+.media {
+    overflow: hidden;
+    position: relative;
+}
+
 .dandelions-container {
     background-image: url("images/dandelions.png");
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
-    left: 425px;
+    left: -30px;
     margin-top: 30px;
     width: 790px;
     height: 697px;
