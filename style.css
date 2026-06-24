@@ -19,10 +19,12 @@ body {
 }
 
 .dandelions-container {
-    background-image: url(images/dandelions.png);
+    background-image: url("images/dandelions.png");
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
+    left: 425px;
+    margin-top: 30px;
     width: 790px;
     height: 697px;
 }
@@ -53,7 +55,7 @@ body {
     font-weight: 400;
 }
 
-.Ingredients {
+.ingredients {
     list-style-position: inside;
     list-style-type: circle;
     padding: 0;
