@@ -24,12 +24,12 @@ checkSpeed(299792458);
 
 // Пятый пункт.
 
-let product = "book"
-let price = 300
+let book = "book";
+let price = 300;
 
 function checkBudget(currentBudget) {
     if (currentBudget >= price) {
-        console.log(product + " приобретён." + " Спасибо за покупку!");
+        console.log(book + " приобретён." + " Спасибо за покупку!");
     } else {
         console.log("Вам не хватает " + (price - currentBudget) + "$, пополните баланс!");
     }
@@ -40,7 +40,7 @@ checkBudget(300);
 // Шестой пункт.
 
 function greet(name) {
-    console.log("Assalamu aleykum " + name + ", wellcome to our comunity, feel yourself at home!");
+    console.log("Assalamu aleykum " + name + ", welcome to our community, feel yourself at home!");
 }
 
 greet("@StrMuslim");
@@ -51,5 +51,5 @@ const country = "Россия";
 const name = "StrMuslim";
 let age = 20;
 
-console.log("салам я " + name + " из " + country);
+console.log("салам я " + name + " из " + country + " мне " + age + " лет.");
 
