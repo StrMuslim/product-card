@@ -24,12 +24,12 @@ checkSpeed(299792458);
 
 // Пятый пункт.
 
-let book = "book";
+let product = "book";
 let price = 300;
 
-function checkBudget(currentBudget) {
+function buyProduct(currentBudget) {
     if (currentBudget >= price) {
-        console.log(book + " приобретён." + " Спасибо за покупку!");
+        console.log(product + " приобретён." + " Спасибо за покупку!");
     } else {
         console.log("Вам не хватает " + (price - currentBudget) + "$, пополните баланс!");
     }
