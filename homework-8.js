@@ -28,7 +28,7 @@ carInfo.owner = adminInfo;
 
 // 5)- создать функцию который добавляет свойство и значение при их отсутствии
 
-function checkTheKey(obj) { 
+function addMaxSpeed(obj) { 
     if(obj.maxSpeed) {
         return;
     } else {
@@ -36,7 +36,7 @@ function checkTheKey(obj) {
     }
 }
 
-checkTheKey(carInfo);
+addMaxSpeed(carInfo);
 
 console.log(Object.keys(carInfo))
 console.log(carInfo.maxSpeed)
@@ -92,12 +92,14 @@ console.log(phones)
 
 // 10)- создать массив и использовать метод map()
 
-const checkPhones = allPhones.map(function(item) {
+const rarePhones = allPhones.map(function(item) {
     if (item.class === "premium flagship") {
-        item.isRare = true;
+       item.isRare = true;
     } else {
-        item.isRare = false;
+       item.isRare = false;
     }
+    return item;
 });
 
 console.log(allPhones[2].isRare)
+console.log(rarePhones)
