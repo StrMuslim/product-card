@@ -27,7 +27,7 @@ checkSpeed(299792458);
 let product = "book";
 let price = 300;
 
-function buyProduct(currentBudget) {
+function checkBudget(currentBudget) {
     if (currentBudget >= price) {
         console.log(product + " приобретён." + " Спасибо за покупку!");
     } else {
