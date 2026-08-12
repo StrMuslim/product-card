@@ -1,4 +1,11 @@
-// 2)- создать массив чисел и отвилтровать его
+// 6)- Импортировать массив коментарии 
+
+import { comments } from "./coment.js";
+
+console.log(comments);
+
+
+// 2)- создать массив чисел и отфилтровать его
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -30,13 +37,6 @@ console.log(reverseArray(numbers));
 console.log(reverseArray(clothes));
 
 
-// 6)- Импортировать массив коментарии 
-
-import { comments } from "./coment.js";
-
-console.log(comments);
-
-
 // 7)- Вывести в консоль массив тех комментариев, почта пользователей которых содержит ".com"
 
 const hasGoogleAcc = comments.filter(coment => coment.email.includes(".com"));
@@ -46,28 +46,21 @@ console.log(hasGoogleAcc);
 
 // 8)- Перебрать массив таким образом, что бы пользователи с id меньше или равно 5 имели postId: 2, а те, у кого id больше 5, имели postId: 1
 
-const idIssue  = comments.forEach(comment => {
-   if (comment.id <= 5) {
-    comment.postId = 2;
-   } else {
-    comment.postId = 1;
-   }
-});
+const idChanging  = comments.forEach(comment => {comment.id <= 5 ? comment.postId = 2 : comment.postId = 1});
 
 console.log(comments);
 
 
 // 9)- Перебрать массив, что бы объекты состояли только из айди и имени
 
-const idAndName = comments.map(comment => {
+const commentIds_Names = comments.map(comment => {
     return {
         id: comment.id,
         name: comment.name
     }
-     
 });
 
-console.log(idAndName);
+console.log(commentIds_Names);
 
 
 // 10)- Перебираем массив, добавляем объектам свойство isInvalid и проверяем: если длина тела сообщения (body) больше 180 символов - устанавливаем true, меньше - false.
@@ -86,22 +79,22 @@ console.log(addInvalidKey[0]);
 
 // c reduce()
 
-const email = comments.reduce((acc, comment) => {
+const emails1 = comments.reduce((acc, comment) => {
     acc.push(comment.email);
     return acc ;
 }, []);
 
-console.log(email);
+console.log(emails2);
 
 // c map()
 
-const emails = comments.map(comment => comment.email);
+const emails2 = comments.map(comment => comment.email);
 
-console.log(emails);
+console.log(emails2);
 
 
 // 12)- Почитать про методы toString(), join() и перебрав массив с задания №11, привести его к строке.
 
-const emailsToString = emails.join(", ");
+const emailsToString = emails1.join(", ");
 
 console.log(emailsToString);
