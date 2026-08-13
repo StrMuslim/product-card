@@ -53,7 +53,7 @@ console.log(comments);
 
 // 9)- Перебрать массив, что бы объекты состояли только из айди и имени
 
-const commentIds_Names = comments.map(comment => {
+const commentIdsAndNames = comments.map(comment => {
     return {
         id: comment.id,
         name: comment.name
