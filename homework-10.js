@@ -4,6 +4,7 @@ const productContair = document.querySelector(".container");
 const template = document.querySelector("#template");
 
 
+
 // 3 и 5) Реализовать функцию, которая при старте страницы выводит сообщение (через функцию prompt) "Сколько карточек отобразить? От 1 до 5" и в зависимости от результата - будет выводить введенное количество. Должна быть защита от ввода других значений (проверка if). То-есть: у нас будет 2 функции, одна возвращает количество карточек, которое нужно ввести, другая - рендерить эти карточки (принимая массив аргументом)
 function getAmoutOfCards() {
     const amoutOfCards = prompt("Сколько карточек отобразить ? От 1 до 5");
@@ -18,15 +19,19 @@ function showAmoutOfCards(productCards) {
     productCards.slice(0, getAmoutOfCards()).forEach(item => {
     const clone = template.content.cloneNode(true);
 
-    clone.querySelector(".card__productimage").src = item.photo;
+    clone.querySelector(".card__productimage").src = "/images/" + item.photo + ".jpg";
     clone.querySelector(".card__category").textContent = item.category;
     clone.querySelector(".card__name").textContent = item.name;
     clone.querySelector(".card__description").textContent = item.description;
-    clone.querySelector(".ingredient-box__ingredient-text").textContent = item.ingredientText;
-    clone.querySelector(".component1").textContent = item.component1;
-    clone.querySelector(".component2").textContent = item.component2;
-    clone.querySelector(".component3").textContent = item.component3;
-    clone.querySelector(".price-box__cost").textContent = item.price;
+    clone.querySelector(".price-box__cost").textContent = item.price.toLocaleString("ru-RU") + " ₽";
+
+    const ingredientList = clone.querySelector(".ingredient-list");
+
+    item.components.forEach(component => {
+        const li = document.createElement("li");
+        li.textContent = component;
+        ingredientList.appendChild(li);
+    })
 
     productContair.appendChild(clone);
 })
