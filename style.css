@@ -1,6 +1,7 @@
 body {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -170,3 +171,10 @@ body {
 .tomato-background {
     background-color: tomato;
 }
+
+
+.footer__sectiion {
+    display: flex;
+    justify-content: space-between;
+}
+

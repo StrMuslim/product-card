@@ -7,7 +7,7 @@ const template = document.querySelector("#template");
 
 // 3 и 5) Реализовать функцию, которая при старте страницы выводит сообщение (через функцию prompt) "Сколько карточек отобразить? От 1 до 5" и в зависимости от результата - будет выводить введенное количество. Должна быть защита от ввода других значений (проверка if). То-есть: у нас будет 2 функции, одна возвращает количество карточек, которое нужно ввести, другая - рендерить эти карточки (принимая массив аргументом)
 function getAmoutOfCards() {
-    const amoutOfCards = prompt("Сколько карточек отобразить ? От 1 до 5");
+    /*const amoutOfCards = prompt("Сколько карточек отобразить ? От 1 до 5");*/
     if (amoutOfCards >= 1 && amoutOfCards <= 5) {
         return Number(amoutOfCards);
     }
@@ -16,7 +16,7 @@ function getAmoutOfCards() {
 }
 
 function showAmoutOfCards(productCards) {
-    productCards.slice(0, getAmoutOfCards()).forEach(item => {
+    productCards/*.slice(0, getAmoutOfCards())*/.forEach(item => {
     const clone = template.content.cloneNode(true);
 
     clone.querySelector(".card__productimage").src = "/images/" + item.photo + ".jpg";
