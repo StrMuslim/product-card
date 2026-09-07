@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ПРОДУКТЫ</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
@@ -13,6 +14,7 @@
         <div class="header">
             <div class="media__dandelions"></div>
             <h1 class="title">Выбери свой продукт</h1>
+            <button class="regisrtation-button">Регистрация</button>
         </div>
         <div class="media__button-container button-container">
             <button class="button-container__color-the-first-card button">Красить первую карточку</button>
@@ -39,39 +41,95 @@
         </template>
     </div>
     <footer class="footer">
-        <section class="footer__sectiion">
-            <article class="footer__information">
-                <p class="footer__title"></p>
+        <section class="footer__section">
+            <div class="footer__information">
+                <p class="footer__title">Product Cards</p>
                 <p class="footer__description">У нас самые лучшие продукты для кожи!</p>
-                <a href="">
-                    <i class="fa-brands fa-telegram fa-solid"></i>
+                <a href="#">
+                    <img class="footer__telegram-logo logo" src="images/telegram-logo.png"></img>
                 </a>
-                <a href="">
-                    <i class="fa-brands fa-vk"></i>
+                <a href="#">
+                    <img class="footer__wk-logo logo" src="images/wk-logo.png"></img>
                 </a>
-            </article>
+            </div>
 
-            <article class="footer__subscription">
-                <p class="footer__newsletter"></p>
-                <input type="email" placeholder="Введи Email...">
+            <div class="footer__subscription">
+                <p class="footer__newsletter">Подпишись на наши акции:</p>
+                <form class="footer__form" action="">
+                    <input id="input" type="text" placeholder="Введи Email...">
+                    <button type="submit" class="footer__button">Подписаться</button>
+                </form> 
+                <p class="footer__error-massage"></p>
+            </div>
 
-            </article>
 
-            <article>
                 <nav class="footer-nav">
                     <p class="footer-nav__title">Быстрые ссылки</p>
                     <a class="link" href="#">Главная</a>
                     <a class="link" href="#">Магазин</a>
                     <a class="link" href="#">Контакты</a>
                 </nav>
-            </article>
+
         </section>
-        <p class="footer__copiright">all rights preserved</p>
+        <p class="footer__copyright">www.product-cards.com©all right reserve</p>
     </footer>
+
+    <div class="big-container">
+        <div class="modal">
+            <button class="modal__exit-button">x</button>
+            <form class="modal__form" action="">
+            <p class="modal__title">Создание аккаунта</p>
+            <p class="modal__title-description">Наполните форму ниже чтобы зарегистрироваться</p>
+            <div>
+                <p class="modal__description-of-input">Имя</p>
+                <input name="userName" placeholder="Умар" class="inputs" type="text" required>
+            </div>
+                    
+            <div>
+                <p class="modal__description-of-input">Фамилия</p>
+                <input name="surname" placeholder="Умаров" class="inputs" type="text" required>
+            </div>
+
+            <div>
+                <p class="modal__description-of-input">Дата рождение</p>
+                <input name="birthday" class="inputs" type="date" required min="1930-01-01" max="2020-01-01">
+            </div>
+
+            <div>
+                <p class="modal__description-of-input">Электроння почта</p>
+                <input name="email" placeholder="umar@gmail.com" class="inputs" type="email" required>
+            </div>
+
+            <div>
+                <p class="modal__description-of-input">Логин</p>
+                <input name="login" class="inputs" type="text" required minlength="3" maxlength="20">
+            </div>
+
+            <div>
+                <p class="modal__description-of-input">Пароль</p>
+                <p class="incorrect-password error-message-password"></p>
+                <input name="password" class="inputs password" type="password" required minlength="6" maxlength="20">
+            </div>
+
+            <div>
+                <p class="modal__description-of-input">Повторите пароль</p>
+                <p class="incorrect-repeat-password error-message-password2"></p>
+                <input class="inputs repeat-password" type="password" required minlength="6" maxlength="20">
+            </div>
+
+            <button class="modal__registr-btn" type="submit">Зарегистрироваться</button>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
     <script src="main.js"></script>
     <script src="homework-7.js"></script>
     <script src="homework-8.js"></script>
     <script src="homework-9.js" type="module"></script>
     <script src="homework-10.js" type="module"></script>
     <script src="homework-10.js" type="module"></script>
+    <script src="homework-11.js" type="module"></script>
 </body>
