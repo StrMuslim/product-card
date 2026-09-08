@@ -60,7 +60,7 @@ const commentIdsAndNames = comments.map(comment => {
     }
 });
 
-console.log(commentIds_Names);
+console.log(commentIdsAndNames);
 
 
 // 10)- Перебираем массив, добавляем объектам свойство isInvalid и проверяем: если длина тела сообщения (body) больше 180 символов - устанавливаем true, меньше - false.
@@ -84,7 +84,7 @@ const emails1 = comments.reduce((acc, comment) => {
     return acc ;
 }, []);
 
-console.log(emails2);
+console.log(emails1);
 
 // c map()
 
