@@ -338,3 +338,13 @@ a {
 .regisrtation-button:active {
     transform: scale(0.97);
 }
+
+.footer__telegram-logo {
+    width: 21px;
+    height: 17.61px;
+}
+
+.footer__vk-logo {
+    width: 24px;
+    height: 14px;
+}
