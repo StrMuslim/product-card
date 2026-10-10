@@ -36,10 +36,10 @@ function addMaxSpeed(obj) {
     }
 }
 
-addMaxSpeed(carInfo);
+//addMaxSpeed(carInfo);
 
-console.log(Object.keys(carInfo))
-console.log(carInfo.maxSpeed)
+//console.log(Object.keys(carInfo))
+//console.log(carInfo.maxSpeed)
 
 // 6)- создать функцию 
 
@@ -47,7 +47,7 @@ function showValue(obj , key) {
     console.log(obj[key])
 }
 
-showValue (carInfo, "maxSpeed");
+//showValue (carInfo, "maxSpeed");
 
 // 7)- создать массив 
 
@@ -72,9 +72,9 @@ const newPhone = {
     OS : "android 10"
 };
 
-phones.push(newPhone)
+//phones.push(newPhone)
 
-console.log(phones)
+//console.log(phones)
 
 
 // 9)- создать еще один массив и объеденить его с массивом из 8) 
@@ -88,7 +88,7 @@ console.log(phones)
 
  const allPhones = [...phones, ...samsungPhones];
 
- console.log(allPhones)
+//console.log(allPhones)
 
 // 10)- создать массив и использовать метод map()
 
@@ -101,5 +101,5 @@ const rarePhones = allPhones.map(function(item) {
     return item;
 });
 
-console.log(allPhones[2].isRare)
-console.log(rarePhones)
+//console.log(allPhones[2].isRare)
+//console.log(rarePhones)

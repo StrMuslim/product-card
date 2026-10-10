@@ -20,4 +20,4 @@ class Form {
 
 const modalForm = new Form("modal__form");
 
-console.log(modalForm.getValues());
+//console.log(modalForm.getValues());
