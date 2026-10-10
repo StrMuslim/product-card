@@ -4,7 +4,7 @@ function showWeather (city,temperature) {
     console.log("Сейчас в " + city + " температура — " + temperature + " градусов по Цельсию.");
 }
 
-showWeather("Мекка", 38);
+//showWeather("Мекка", 38);
 
 // Четвертый пункт.
 
@@ -20,7 +20,7 @@ function checkSpeed(speed) {
     }
 }
 
-checkSpeed(299792458);
+//checkSpeed(299792458);
 
 // Пятый пункт.
 
@@ -35,7 +35,7 @@ function checkBudget(currentBudget) {
     }
 }
 
-checkBudget(300);
+//checkBudget(300);
 
 // Шестой пункт.
 
@@ -43,7 +43,7 @@ function greet(name) {
     console.log("Assalamu aleykum " + name + ", welcome to our community, feel yourself at home!");
 }
 
-greet("@StrMuslim");
+//greet("@StrMuslim");
 
 // Седьмой пункт.
 
@@ -51,5 +51,5 @@ const country = "Россия";
 const name = "StrMuslim";
 let age = 20;
 
-console.log("салам я " + name + " из " + country + " мне " + age + " лет.");
+//console.log("салам я " + name + " из " + country + " мне " + age + " лет.");
 
