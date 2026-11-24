@@ -38,7 +38,7 @@ function showAmoutOfCards(productCards) {
 }
 
 
-showAmoutOfCards(productCards);
+//showAmoutOfCards(productCards);
 
 // 4) Используя метод .reduce(), получить массив объектов, где ключем является название продукта, а значением - его описание
 
@@ -47,4 +47,4 @@ const box = productCards.reduce((acc, product) => {
      return acc;
 }, []);
 
-console.log(box);
+//console.log(box);

@@ -71,7 +71,7 @@ registrationForm.addEventListener("submit", (event) => {
         createdOn : new Date()
     };
 
-    console.log(user);
+   // console.log(user);
 
     overlay.style.display = "none";
     modal.style.display = "none";

@@ -21,5 +21,5 @@ class ButtonPhones extends Phones {
 
 const phone1 = new ButtonPhones("Nokia", "blue-sky", 2000);
 
-console.log(phone1);
-console.log(phone1.getModel());
+//console.log(phone1);
+//console.log(phone1.getModel());
