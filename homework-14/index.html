@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <div class="box-buttons">
+        <button class="registration-btn button" id="registration-btn">Регистрация</button>
+        <button class="auth-btn button" id="auth-btn">Аутентификация</button>
+    </div>
+
+        <p class="text-info"> <span class="green-text">Зарегистрируйтесь</span> <br> <span class="part-2-text">прежде чем начать</span></p>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="modal" id="registration-modal">
+        <h1>РЕГИСТРАЦИЯ</h1>
+        <div class="input-container">
+            <input class="input" type="password" placeholder="ЛОГИН">
+            <input class="input" type="password" placeholder="ПАРОЛЬ">
+            <input class="input" type="password" placeholder="ПОВТОРИТЕ ПАРОЛЬ">
+            <input class="input" type="email" placeholder="ПОЧТА">
+            <button class="next-registr-btn">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+        </div>
+
+        <button class="exit-registration-btn exit-btn" id="registration-modal__exit-btn">x</button>
+    </div>
+
+    <div class="modal " id="auth-modal">
+        <h1>Аутентификация</h1>
+
+        <div class="input-container">
+            <input class="input" type="password" placeholder="ЛОГИН">
+            <input class="input" type="password" placeholder="ПАРОЛЬ">
+            <button class="next-registr-btn">ПРОДОЛЖИТЬ</button>
+        </div>
+
+        <button class="exit-auth-btn exit-btn" id="auth-modal__exit-btn">x</button>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>

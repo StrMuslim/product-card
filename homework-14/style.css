@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.box-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    margin:50px 10px;
+    border: 0;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 0 10px 0 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(148, 119, 222);
+    box-shadow: 1px 1px 30px rgb(167, 115, 223);
+    transition: transform 0.3s ease;
+}
+
+.input {
+    width: 80%;
+    height: 60px;
+    padding: 0 10px 0 10px;
+    border-radius: 80px;
+    border: 1px solid grey;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.input-container input:last-of-type {
+    margin-bottom: 15px;
+}
+
+.next-registr-btn {
+    width: 50%;
+    height: 60px;
+    border-radius: 80px;
+    color: white;
+    border: 0;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 0 10px 0 10px;
+    background-color: rgb(92, 186, 93);
+    box-shadow: 1px 1px 30px rgb(61, 201, 101);
+    transition: transform 0.3s ease;
+}
+
+.next-registr-btn:active {
+    transform: scale(0.95);
+}
+
+.overlay-showed {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.modal {
+    display: none;
+}
+
+.modal-showed {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 500px;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: 700px;
+    border-radius: 60px;
+    /* border: 2px solid black; */
+    box-shadow: 10px 10px 190px rgba(255, 255, 255, 0.425);
+    background-color: white;
+    z-index: 3;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.exit-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 99px;
+    border: 0;
+    font-size: 30px;
+    color: aliceblue;
+    background-color: rgb(54, 54, 54);
+    transition: transform 0.2s ease-in;
+}
+
+.exit-btn:active {
+    transform: scale(0.9);
+    background-color: rgb(74, 74, 74);
+}
+
+.text-info {
+    font-size: 120px;
+    font-weight: 900;
+    margin: 200px 40px 0 40px;
+}
+
+.green-text {
+    color: rgb(92, 186, 93);
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow:0 0 70px rgb(130, 237, 132);
+    }
+
+    to {
+        text-shadow:0 0 30px rgb(127, 243, 129);
+    }
+}
+
+.green-text::after {
+    content: "";
+}
+
+.part-2-text::before {
+    content: "         ";
+}
+
+.part-2-text {
+    margin: 0 0 0 770px;
+}

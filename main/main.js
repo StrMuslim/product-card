@@ -7,8 +7,10 @@ import "./homework-10.js"
 import "./homework-11.js"
 import "./homework-12.js"
 import "./homework-13.js"
-import "./modal.js"
+import "./modal_12.js"
 import "./form.js"
+import "./homework-14.js"
+
 
 const colorFirstCardBtn = document.querySelector(
   ".button-container__color-the-first-card",
