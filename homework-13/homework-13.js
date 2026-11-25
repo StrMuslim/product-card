@@ -1,5 +1,5 @@
 class Drink {
-    #temperature 
+    #temperature
     constructor(name, size, price, temperature) {
         this.name = name;
         this.size = size;
@@ -92,3 +92,5 @@ const cafe = new Cafe("Рахат", "Г.Москва Ул.Набережний �
 
 console.log(cafe.cafeInfo);
 cafe.orderDrink(lemonade);
+
+const name = "lkdnkjaefbh";

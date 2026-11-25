@@ -26,8 +26,6 @@ input.addEventListener("input", function() {
     input.classList.remove("input-error");
 });
 
-// 5 - 6 - 7 
-
 const overlay = document.querySelector(".overlay");
 const modal = document.querySelector(".modal");
 const modalExitButton = document.querySelector(".modal__exit-button");
@@ -36,7 +34,7 @@ const registrationForm = document.querySelector(".modal__form");
 const inputPassword = document.querySelector(".password");
 const inputRepeatPassword = document.querySelector(".repeat-password");
 const incorrectPasswordTextMessage = document.querySelector(".incorrect-repeat-password");
-/*
+
 registrationButton.addEventListener("click", function() {
     overlay.style.display = "block";
     modal.style.display = "block";
@@ -46,7 +44,6 @@ modalExitButton.addEventListener("click", function() {
     overlay.style.display = "none";
     modal.style.display = "none";
 });
-*/
 
 let user;
 
@@ -71,11 +68,8 @@ registrationForm.addEventListener("submit", (event) => {
         createdOn : new Date()
     };
 
-   // console.log(user);
-
     overlay.style.display = "none";
     modal.style.display = "none";
-
 });
 
 inputPassword.addEventListener("input", function() {
