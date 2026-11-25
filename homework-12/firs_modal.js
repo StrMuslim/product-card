@@ -1,5 +1,3 @@
-// 4
-
 class Modal {
     constructor(id) {
         this.modal = document.getElementById(id);

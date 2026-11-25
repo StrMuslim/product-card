@@ -1,5 +1,3 @@
-// 5 Создать файл Form.js и реализовать класс для формы под названием Form...
-
 class Form {
     constructor(id) {
         this.form = document.getElementById(id);
@@ -19,5 +17,3 @@ class Form {
 }
 
 const modalForm = new Form("modal__form");
-
-//console.log(modalForm.getValues());

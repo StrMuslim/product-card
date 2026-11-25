@@ -152,14 +152,6 @@ h1 {
     }
 }
 
-.green-text::after {
-    content: "";
-}
-
-.part-2-text::before {
-    content: "         ";
-}
-
 .part-2-text {
     margin: 0 0 0 770px;
 }

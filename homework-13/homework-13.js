@@ -1,5 +1,5 @@
 class Drink {
-    #temperature 
+    #temperature
     constructor(name, size, price, temperature) {
         this.name = name;
         this.size = size;
